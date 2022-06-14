@@ -1,0 +1,29 @@
+body {
+  font-weight: 400;
+  font-size: 1.3125rem;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1;
+  font-weight: 900;
+}
+
+section{
+    padding: 3rem 0;
+}
+
+.bg-light {
+  background-color: antiquewhite;
+  color: black;
+}
+.bg-dark {
+  background-color: rgb(27, 24, 24);
+  color: white;
+}
+.bg-accent{
+    background-color: rgb(77, 29, 29);
+    color: white;
+}
