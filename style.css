@@ -4,9 +4,18 @@ body {
   line-height: 1.6;
 }
 
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
 h1,
 h2,
 h3 {
+  color: rgb(194, 44, 44);
   line-height: 1;
   font-weight: 900;
   margin-bottom: 1em;
@@ -19,8 +28,8 @@ p {
 }
 
 img {
-  max-width: 100%;
   display: block;
+  max-width: 100%;
 }
 
 .text-center {
@@ -29,12 +38,41 @@ img {
 
 header,
 section {
-  padding: 3rem 0;
+  padding: 4rem 0;
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+  border: 2px solid black;
+}
+
+@media (min-width: 40em) {
+  header,
+  section {
+    padding: 7rem 0;
+  }
 }
 
 .container {
   margin-inline: auto;
   width: min(90%, 70.5rem);
+}
+
+.split {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 40em) {
+  .split {
+    flex-direction: row;
+  }
+
+  .split > * {
+    flex-basis: 100%;
+  }
+
+  .split > * + * {
+    margin-left: 2em;
+  }
 }
 
 .container--narrow {
@@ -50,6 +88,6 @@ section {
   color: white;
 }
 .bg-accent {
-  background-color: rgb(77, 29, 29);
+  background-color: rgb(117, 45, 45);
   color: white;
 }
