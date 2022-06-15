@@ -14,8 +14,13 @@ h3 {
 
 h2,
 h3,
-p{
+p {
   margin-bottom: 1em;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 .text-center {
@@ -32,7 +37,7 @@ section {
   width: min(90%, 70.5rem);
 }
 
-.container--narrow{
+.container--narrow {
   max-width: 34rem;
 }
 
