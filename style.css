@@ -9,10 +9,31 @@ h2,
 h3 {
   line-height: 1;
   font-weight: 900;
+  margin-bottom: 1em;
 }
 
-section{
-    padding: 3rem 0;
+h2,
+h3,
+p{
+  margin-bottom: 1em;
+}
+
+.text-center {
+  text-align: center;
+}
+
+header,
+section {
+  padding: 3rem 0;
+}
+
+.container {
+  margin-inline: auto;
+  width: min(90%, 70.5rem);
+}
+
+.container--narrow{
+  max-width: 34rem;
 }
 
 .bg-light {
@@ -23,7 +44,7 @@ section{
   background-color: rgb(27, 24, 24);
   color: white;
 }
-.bg-accent{
-    background-color: rgb(77, 29, 29);
-    color: white;
+.bg-accent {
+  background-color: rgb(77, 29, 29);
+  color: white;
 }
